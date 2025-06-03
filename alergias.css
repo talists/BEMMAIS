@@ -1,0 +1,564 @@
+/* Reset e básicos já existentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    background-color: #24df91a6;
+}
+
+h2.titulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+header {
+  background-color:#24df91a6;
+  height: 100px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  padding: 0 20px;
+}
+
+header .titulo {
+  color: white;
+  font-size: 30px; 
+  font-weight: 700;
+  margin: 0;
+  text-align: center; 
+  width: 100%;  
+  padding-top: 20px; /* afasta do topo do header */
+}
+
+
+
+/* Hero Section */
+section.hero-site {
+    height: 90vh;
+    background-image: url(imagens/frente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.hero-site .interface {
+    max-width: 600px;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span {
+    display: block;
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.hero-site button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Vantagens Section */
+section.vantagens {
+    padding: 80px 0;
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagens .img-itens img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 35px;
+    height: auto;
+}
+
+.vantagens .txt-itens h3 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.itens-container .txt-itens h3 span {
+    font-weight: 300;
+}
+
+.itens-container .txt-itens p {
+    font-size: 20px;
+}
+
+/* Contato Section */
+section.contato {
+    padding: 0px 4%;
+    margin-top: 40px;  /* espaçamento acima da seção */
+    margin-bottom: 40px; /* espaçamento abaixo da seção */
+}
+
+
+form {
+    max-width: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    border: none;
+    outline: none;
+    padding: 20px 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+    font-size: 10px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #ccc;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 140px;
+    background-color: rgb(12, 107, 250);
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    padding: 12px 0;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form .btn-enviar input:hover {
+    background-color: #cc3311;
+}
+
+.btn-secundario {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-secundario button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 14px; /* fonte menor */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn-secundario button:hover {
+    color: #ccc;
+}
+/* Telefone Section */
+section.telefone {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.txt-contato,
+.icons-contato {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.telefone .txt-contato h3 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.telefone .txt-contato h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.telefone .icons-contato a {
+    text-decoration: none;
+}
+
+.telefone .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    max-width: 300px;
+    height: 60px;
+    margin: 10px auto;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.telefone .icons-contato button i {
+    font-size: 24px;
+    min-width: 24px;
+}
+
+.telefone .icons-contato button p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.telefone .icons-contato button:hover {
+    background-color: #000;
+}
+
+.telefone .icons-contato button:hover i,
+.telefone .icons-contato button:hover p {
+    color: #fff;
+}
+
+/* RESPONSIVIDADE */
+
+/* Tablets e telas médias */
+@media screen and (max-width: 1024px) {
+    .interface {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Menu lateral vira vertical */
+    .menu-lateral ul {
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .menu-lateral ul li {
+        padding: 8px 0;
+    }
+
+    /* Vantagens itens em coluna */
+    .vantagens .itens-container {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .vantagens .img-itens img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    /* Hero texto centralizado e com padding */
+    .hero-site .interface {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Telefone section itens empilhados */
+    .txt-contato,
+    .icons-contato {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .telefone .icons-contato button {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile: smartphones */
+@media screen and (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .interface .logo img {
+        max-width: 100px;
+    }
+
+    .menu-lateral ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        background: transparent;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .menu-lateral ul li {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .hero-site {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 1.8em;
+        line-height: 1.1;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 1rem;
+    }
+
+    .vantagens .txt-itens h3 {
+        font-size: 2em;
+    }
+
+    .vantagens .itens-container {
+        gap: 20px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    form .btn-enviar input {
+        width: 100%;
+        max-width: none;
+        font-size: 18px;
+    }
+
+    .telefone .icons-contato button {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    .telefone .txt-contato h3 {
+        font-size: 1.8em;
+    }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #7CAF87;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Seção geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #7CAF87;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; /* Impede a rolagem */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box-inferior-verde {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;  /* diminui para um espaçamento menor que o anterior */
+  font-family: Arial, sans-serif;
+}
+
+.avatar {
+  font-size: 80px;
+  color: rgb(253, 50, 152);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.alergia {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 20px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #003366;
+  user-select: none;
+}
+
+.alergia i {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+/* Textos */
+.alergia-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cores específicas para cada alergia */
+.alergia.vermelho {
+  background-color: #ff2b2b;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(74, 15, 15, 0.3);
+}
+
+.alergia.azul {
+  background-color: #4987d8;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(16, 50, 90, 0.3);
+}
+
+.alergia.amarelo {
+  background-color: #d6c762;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(90, 86, 16, 0.3);
+}
+
+.alergia.verde-escuro {
+  background-color: #883e97;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(42, 77, 34, 0.3);
+}
+
+/* Botão */
+.botao-exame {
+  margin-bottom: 120px; /* aumenta a distância do botão sair */
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #186ba198;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-exame:hover {
+  background-color: #218838;
+}
+
+
+.botao-sair {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #dc3545; /* vermelho forte */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.botao-sair:hover {
+  background-color: #b02a37;
+}

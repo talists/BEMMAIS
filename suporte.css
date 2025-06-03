@@ -1,0 +1,123 @@
+/* Reset e base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Botão geral */
+.botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  width: 120px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ícones lado a lado */
+.icon-pair {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+/* Cores específicas */
+.botao-whatsapp {
+  background-color: #25D366;
+}
+.botao-whatsapp:hover {
+  background-color: #1da851;
+}
+
+.botao-instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.botao-instagram:hover {
+  opacity: 0.85;
+}
+
+.botao-email {
+  background-color: #0072c6;
+}
+.botao-email:hover {
+  background-color: #005fa3;
+}
+
+.botao-telefone {
+  background-color: #008080;
+}
+.botao-telefone:hover {
+  background-color: #006666;
+}
+
+.botao-facebook {
+  background-color: #3b5998;
+}
+.botao-facebook:hover {
+  background-color: #2d4373;
+}
+
+/* Texto do botão */
+.botao span {
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.botao-voltar {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: background-color 0.3s ease;
+  margin: 100px auto 40px auto; 
+  position: relative;
+  bottom: 0;
+}
+
+.botao-voltar:hover {
+  background-color: #222;
+}
+
+.botao-voltar i {
+  font-size: 1.4rem;
+}

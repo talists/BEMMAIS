@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adicionar Compromisso</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="add_agenda.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+  <header>
+    <h2 class="titulo">ADICIONAR</h2>
+  </header>
+
+  <section class="box-inferior-verde">
+    <div class="avatar">
+      <i class="bi bi-calendar-check-fill"></i>
+    </div>
+
+    <!-- Compromisso já criado -->
+    <div class="compromisso criado">
+      <i class="bi bi-check-circle-fill" style="color: green; font-size: 1.5rem; margin-right: 10px;"></i>
+      <div>
+        <div class="data-hora">25/06/2025 - 15:00</div>
+        <div class="descricao">Reunião com o time de desenvolvimento</div>
+      </div>
+    </div>
+
+    <!-- Formulário para novo compromisso -->
+    <form class="form-adicionar" action="#" method="post">
+      <input type="date" name="data" required />
+      <input type="time" name="hora" required />
+      <input type="text" name="descricao" placeholder="Descrição do compromisso" required />
+      <div class="btn-enviar">
+        <input type="submit" value="Adicionar compromisso" />
+      </div>
+    </form>
+
+    <!-- Cancelar ou voltar -->
+    <a href="agenda.html" class="botao-exame">Cancelar</a>
+  </section>
+</body>
+</html>
+
+

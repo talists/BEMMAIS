@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adicionar Medicamento</title>
+  <link rel="stylesheet" href="add_medicamentos.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+  <header>
+    <h2 class="titulo">ADICIONAR</h2>
+  </header>
+
+  <section class="box-inferior-verde">
+    <!-- Ícone do medicamento -->
+    <div class="avatar">
+      <i class="bi bi-capsule-pill-fill"></i>
+    </div>
+
+    <!-- Medicamento criado com sucesso -->
+    <div class="medicamento criado">
+      <i class="bi bi-check-circle-fill" style="color: green; font-size: 1.5rem; margin-right: 10px;"></i>
+      <div>
+        <div class="nome-medicamento">Ibuprofeno</div>
+        <div class="descricao-medicamento">Dose: 400mg - 3x ao dia</div>
+      </div>
+    </div>
+
+    <!-- Formulário para novo medicamento -->
+    <form class="form-adicionar" action="#" method="post">
+      <input type="text" name="nome" placeholder="Nome do medicamento" required />
+      <input type="number" name="dose" placeholder="Dose (mg)" required min="1" />
+      <input type="time" name="hora" placeholder="Hora da medicação" required />
+      <div class="btn-enviar">
+        <input type="submit" value="Adicionar medicamento" />
+      </div>
+    </form>
+
+    <!-- Cancelar ou voltar -->
+    <a href="medicamentos.html" class="botao-exame">Cancelar</a>
+  </section>
+</body>
+</html>

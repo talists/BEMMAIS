@@ -1,0 +1,334 @@
+/* Reset e básicos já existentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    background-color: white;
+}
+
+h2.titulo {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+header {
+  background-color: #24df91a6;
+  height: 100px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  padding: 0 20px;
+}
+
+header .titulo {
+  color: white;
+  font-size: 40px; 
+  font-weight: 700;
+  margin: 0;
+  text-align: center; 
+  width: 100%;  
+  padding-top: 20px; /* afasta do topo do header */
+}
+
+
+/* RESPONSIVIDADE */
+
+/* Tablets e telas médias */
+@media screen and (max-width: 1024px) {
+    .interface {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Menu lateral vira vertical */
+    .menu-lateral ul {
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .menu-lateral ul li {
+        padding: 8px 0;
+    }
+
+    /* Vantagens itens em coluna */
+    .vantagens .itens-container {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .vantagens .img-itens img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    /* Hero texto centralizado e com padding */
+    .hero-site .interface {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Telefone section itens empilhados */
+    .txt-contato,
+    .icons-contato {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .telefone .icons-contato button {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile: smartphones */
+@media screen and (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .interface .logo img {
+        max-width: 100px;
+    }
+
+    .menu-lateral ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        background: transparent;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .menu-lateral ul li {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .hero-site {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 1.8em;
+        line-height: 1.1;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 1rem;
+    }
+
+    .vantagens .txt-itens h3 {
+        font-size: 2em;
+    }
+
+    .vantagens .itens-container {
+        gap: 20px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    form .btn-enviar input {
+        width: 100%;
+        max-width: none;
+        font-size: 18px;
+    }
+
+    .telefone .icons-contato button {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    .telefone .txt-contato h3 {
+        font-size: 1.8em;
+    }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #7CAF87;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Seção geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #7CAF87;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; /* Impede a rolagem */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box-inferior-verde {
+  background-color: white; /* verde uniforme */
+  width: 100vw;  /* 100% da largura da tela */
+  height: 100vh; /* 100% da altura da tela, se desejar preencher tudo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* centraliza verticalmente */
+  gap: 50px;
+  padding: 20px 10px 10px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+/* Avatar */
+.avatar {
+  font-size: 80px;
+  color: rgba(245, 1, 1, 0.85);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  margin-top: 20px; /* espaço acima do ícone */
+}
+
+/* Lista de arquivos */
+.lista-exames {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 60vh; /* altura máxima para a lista (ajuste conforme quiser) */
+  overflow-y: auto; /* ativa barra de rolagem se passar da altura */
+  padding-right: 10px; /* para evitar que a barra de rolagem "pegue" o conteúdo */
+}
+
+.arquivo {
+  background-color: #e69b46b9;
+  padding: 20px 20px; /* maior espaçamento interno */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+
+.arquivo i {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Botão azul-claro */
+.botao-exame {
+  margin-bottom: 80px; /* espaço suficiente para o botão sair fixo */
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #186ba198;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-exame:hover {
+  background-color: #218838;
+}
+
+
+.botao-sair {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #dc3545; /* vermelho forte */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.botao-sair:hover {
+  background-color: #b02a37;
+}
+
+.arquivo:nth-child(1) {
+  background-color: #dfaf58b9; /* laranja */
+}
+
+.arquivo:nth-child(2) {
+  background-color: #8c76c9b9; /* verde */
+}
+
+.arquivo:nth-child(3) {
+  background-color: #f74ff7c2; /* azul claro */
+}
+
+.arquivo:nth-child(4) {
+  background-color: #dca0f0b9; /* roxo claro */
+}
+
+.arquivo:nth-child(5) {
+  background-color: #f5c6a5b9; /* salmão */
+}

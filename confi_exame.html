@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adicionar Exame</title>
+  
+  <!-- Link correto para o CSS -->
+  <link rel="stylesheet" href="confi_exame.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+  <header id="header">
+    <h2 class="titulo">ADICIONAR</h2>
+    <div class="interface"></div>
+  </header>
+
+  <section class="box-inferior-verde">
+    <div class="avatar">
+      <i class="bi bi-file-earmark-plus"></i>
+    </div>
+
+    <form class="form-adicionar" action="#" method="post" enctype="multipart/form-data">
+      <input type="text" name="nomeExame" placeholder="Nome do Exame" required />
+      <input type="text" name="nomeMedico" placeholder="Nome do Médico" required />
+      <input type="file" name="arquivoPdf" accept=".pdf" required />
+
+      <div class="btn-enviar">
+        <input type="submit" value="Salvar Exame" />
+      </div>
+    </form>
+
+    <a href="exames.html" class="botao-exame" style="background-color:#df2f2f;">Cancelar</a>
+  </section>
+
+</body>
+</html>
